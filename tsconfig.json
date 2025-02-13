@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",               // Node.js 환경에서 사용하는 모듈 시스템
+      "target": "es2017",                 // 컴파일된 JavaScript의 ECMAScript 버전
+      "lib": ["es2017", "dom"],           // 프로젝트에서 사용할 표준 라이브러리
+      "moduleResolution": "node",         // 모듈 해석 방식: Node.js 방식
+      "experimentalDecorators": true,     // 데코레이터 문법 사용 활성화
+      "emitDecoratorMetadata": true,      // 데코레이터 메타데이터 생성
+      "sourceMap": true,                  // 소스맵 생성 (디버깅에 유리)
+      "outDir": "./dist",                 // 컴파일 결과물이 출력될 디렉토리
+      "baseUrl": "./",                    // 모듈 import 시 기준 경로
+      "incremental": true,                 // 증분 컴파일 활성화 (빌드 속도 향상)
+      "paths" : {
+        "@nestjs/typeorm": ["node_modules/@nestjs/typeorm"],
+        "typeorm": ["node_modules/typeorm"]
+      }
+    },
+    "include": [
+      "jhboardtest/**/*.ts"                     // src 폴더 내 모든 TypeScript 파일을 포함
+    ],
+    "exclude": [
+    ]
+  }

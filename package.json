@@ -1,0 +1,30 @@
+{
+  "name": "jhboardtest-app",
+  "version": "1.0.0",
+  "description": "게시판 백엔드 예제 프로젝트",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nest start --watch"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.0.9",
+    "@nestjs/core": "^11.0.9",
+    "@nestjs/typeorm": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "pg": "^8.13.2",
+    "reflect-metadata": "^0.1.14",
+    "rxjs": "^7.0.0",
+    "typeorm": "^0.3.20"
+  },
+  "author": "",
+  "license": "ISC"
+}
