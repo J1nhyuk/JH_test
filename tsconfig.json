@@ -16,7 +16,7 @@
       }
     },
     "include": [
-      "jhboardtest/**/*.ts"                     // src 폴더 내 모든 TypeScript 파일을 포함
+      "**/*.ts"                     // src 폴더 내 모든 TypeScript 파일을 포함
     ],
     "exclude": [
     ]
